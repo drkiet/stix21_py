@@ -1,0 +1,119 @@
+<stix:STIX_Package id="edge:Package-ffc0d062-de97-4d33-b5a5-96b9bb7938ce" timestamp="2021-04-24T11:27:47.964347+00:00" version="1.1.1" xmlns:TOUMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Terms_Of_Use-1" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2" xmlns:edge="http://soltra.com/" xmlns:indicator="http://stix.mitre.org/Indicator-2" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:opensource="http://hailataxii.com" xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:tlpMarking="http://data-marking.mitre.org/extensions/MarkingStructure#TLP-1" xmlns:ttp="http://stix.mitre.org/TTP-1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+    
+	<stix:STIX_Header>
+		
+        
+		<stix:Handling>
+			
+            
+			<marking:Marking>
+				
+                
+				<marking:Controlled_Structure>../../../../descendant-or-self::node()</marking:Controlled_Structure>
+				
+                
+				<marking:Marking_Structure color="WHITE" xsi:type="tlpMarking:TLPMarkingStructureType"/>
+				
+                
+				<marking:Marking_Structure xsi:type="TOUMarking:TermsOfUseMarkingStructureType">
+					
+                    
+					<TOUMarking:Terms_Of_Use>TBD</TOUMarking:Terms_Of_Use>
+					
+                
+				</marking:Marking_Structure>
+				
+                
+				<marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+					
+                    
+					<simpleMarking:Statement>Unclassified (Public)</simpleMarking:Statement>
+					
+                
+				</marking:Marking_Structure>
+				
+            
+			</marking:Marking>
+			
+        
+		</stix:Handling>
+		
+    
+	</stix:STIX_Header>
+	
+    
+	<stix:Indicators>
+		
+        
+		<stix:Indicator id="opensource:indicator-d9f76555-ce15-40d6-9656-f26f70d177db" timestamp="2021-04-22T15:10:45.082947+00:00" version="2.1.1" xsi:type="indicator:IndicatorType">
+			
+            
+			<indicator:Title>phishTank.com id:7079737 with malicious URL:https://schoolswithoutwall...</indicator:Title>
+			
+            
+			<indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.1">URL Watchlist</indicator:Type>
+			
+            
+			<indicator:Description>This URL:[https://schoolswithoutwalls.co.uk/wp-content/uploads/2021/raiffcz/raiffcz/e9fe454ce1d83f37883d7cbcbc06cde2] was identified by phishtank.com as part of a phishing email. This URL appears to still be online as of 2021-04-22T05:04:13+00:00. More detailed infomation can be found at http://www.phishtank.com/phish_detail.php?phish_id=7079737</indicator:Description>
+			
+            
+			<indicator:Short_Description>phishTank.com id:7079737 with malicious URL:https://schoolswithoutwall...</indicator:Short_Description>
+			
+            
+			<indicator:Observable idref="opensource:Observable-61d82849-1ebd-4d52-a5ed-f140d085236d">
+            </indicator:Observable>
+			
+            
+			<indicator:Indicated_TTP>
+				
+                
+				<stixCommon:TTP idref="opensource:ttp-c819f3ef-fbc3-4077-8d56-bf619c8d9b29" version="1.1.1" xsi:type="ttp:TTPType"/>
+				
+            
+			</indicator:Indicated_TTP>
+			
+            
+			<indicator:Confidence timestamp="2021-04-22T15:10:45.082973+00:00">
+				
+                
+				<stixCommon:Value xsi:type="stixVocabs:HighMediumLowVocab-1.0">High</stixCommon:Value>
+				
+            
+			</indicator:Confidence>
+			
+            
+			<indicator:Producer>
+				
+                
+				<stixCommon:Identity id="opensource:Identity-de74fb81-97f1-4443-b76a-72d342da10cc">
+					
+                    
+					<stixCommon:Name>http://www.phishtank.com/</stixCommon:Name>
+					
+                
+				</stixCommon:Identity>
+				
+                
+				<stixCommon:Time>
+					
+                    
+					<cyboxCommon:Produced_Time>2021-04-22T05:04:13+00:00</cyboxCommon:Produced_Time>
+					
+                    
+					<cyboxCommon:Received_Time>2021-04-22T15:05:49+00:00</cyboxCommon:Received_Time>
+					
+                
+				</stixCommon:Time>
+				
+            
+			</indicator:Producer>
+			
+        
+		</stix:Indicator>
+		
+    
+	</stix:Indicators>
+	
+
+</stix:STIX_Package>

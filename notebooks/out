@@ -1,0 +1,76 @@
+Results produced by the stix2-elevator are not for production purposes.
+================================================================================
+[-] Results for: stix-111.xml
+[X] STIX JSON: Invalid
+    [!] Warning: indicator--d9f76555-ce15-40d6-9656-f26f70d177db: {214} indicator_types contains a value not in the indicator-type-ov vocabulary.
+    [X] indicator--d9f76555-ce15-40d6-9656-f26f70d177db: Pattern failed to validate: FAIL: Error found at line 1:0. input is missing square brackets.
+    [X] indicator--d9f76555-ce15-40d6-9656-f26f70d177db: Pattern failed to validate: FAIL: Error found at line 1:0. mismatched input 'PLACEHOLDER' expecting {'(', '['}.
+{
+    "id": "bundle--ffc0d062-de97-4d33-b5a5-96b9bb7938ce",
+    "objects": [
+        {
+            "created": "2021-04-24T11:27:47.964Z",
+            "definition": {
+                "statement": "Unclassified (Public)"
+            },
+            "definition_type": "statement",
+            "id": "marking-definition--ac17a1de-3048-4682-9e47-c344b03f55b1",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9",
+                "marking-definition--479c83c3-0773-47f1-99c5-0c14e7bac1d6"
+            ],
+            "spec_version": "2.1",
+            "type": "marking-definition"
+        },
+        {
+            "created": "2021-04-24T11:27:47.964Z",
+            "definition": {
+                "statement": "TBD"
+            },
+            "definition_type": "statement",
+            "id": "marking-definition--479c83c3-0773-47f1-99c5-0c14e7bac1d6",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9",
+                "marking-definition--ac17a1de-3048-4682-9e47-c344b03f55b1"
+            ],
+            "spec_version": "2.1",
+            "type": "marking-definition"
+        },
+        {
+            "created": "2021-04-22T15:10:45.082Z",
+            "id": "identity--de74fb81-97f1-4443-b76a-72d342da10cc",
+            "modified": "2021-04-22T15:10:45.082Z",
+            "name": "http://www.phishtank.com/",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9",
+                "marking-definition--479c83c3-0773-47f1-99c5-0c14e7bac1d6",
+                "marking-definition--ac17a1de-3048-4682-9e47-c344b03f55b1"
+            ],
+            "spec_version": "2.1",
+            "type": "identity"
+        },
+        {
+            "confidence": 85,
+            "created": "2021-04-22T15:10:45.082Z",
+            "created_by_ref": "identity--de74fb81-97f1-4443-b76a-72d342da10cc",
+            "description": "This URL:[https://schoolswithoutwalls.co.uk/wp-content/uploads/2021/raiffcz/raiffcz/e9fe454ce1d83f37883d7cbcbc06cde2] was identified by phishtank.com as part of a phishing email. This URL appears to still be online as of 2021-04-22T05:04:13+00:00. More detailed infomation can be found at http://www.phishtank.com/phish_detail.php?phish_id=7079737phishTank.com id:7079737 with malicious URL:https://schoolswithoutwall...",
+            "id": "indicator--d9f76555-ce15-40d6-9656-f26f70d177db",
+            "indicator_types": [
+                "url-watchlist"
+            ],
+            "modified": "2021-04-22T15:10:45.082Z",
+            "name": "phishTank.com id:7079737 with malicious URL:https://schoolswithoutwall...",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9",
+                "marking-definition--479c83c3-0773-47f1-99c5-0c14e7bac1d6",
+                "marking-definition--ac17a1de-3048-4682-9e47-c344b03f55b1"
+            ],
+            "pattern": "PLACEHOLDER:Observable-61d82849-1ebd-4d52-a5ed-f140d085236d",
+            "pattern_type": "stix",
+            "spec_version": "2.1",
+            "type": "indicator",
+            "valid_from": "2021-04-22T15:10:45.082947Z"
+        }
+    ],
+    "type": "bundle"
+}
